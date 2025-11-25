@@ -11,6 +11,7 @@
 - [tabout](https://github.com/abecodes/tabout.nvim)
 - [flash.nvim](https://github.com/folke/flash.nvim)
 - [vscode-vimdiff](https://github.com/esmuellert/vscode-diff.nvim)
+- [feline.nvim](https://github.com/famiu/feline.nvim)
 - fmt_utils
     - [treesj](https://github.com/Wansmer/treesj)
     - [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
