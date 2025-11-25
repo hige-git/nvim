@@ -1,0 +1,6 @@
+require("config.plugins.neotree")
+require("config.plugins.markdown")
+require("config.plugins.cmp")
+require("config.plugins.colorscheme")
+require("config.plugins.term")
+require("config.plugins.telescope")
