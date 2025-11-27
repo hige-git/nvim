@@ -55,8 +55,10 @@ plugins = {
   -- colorscheme
   "savq/melange-nvim",
   "iamcco/markdown-preview.nvim",
-  -- vscode-diff
+  -- vscode style diff in nvim
   "esmuellert/vscode-diff.nvim",
+  -- Key hints when using keymaps
+  "folke/which-key.nvim",
 }
 -- Setup Lazy
 require("lazy").setup({
