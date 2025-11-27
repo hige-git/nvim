@@ -1,5 +1,6 @@
 return {
   require("plugins.cmp"),
+  require("plugins.lsp"),
   require("plugins.telescope"),
   require("plugins.neotree"),
   require("plugins.colorscheme"),
