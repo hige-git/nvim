@@ -84,10 +84,10 @@ k('n', 'gl', vim.diagnostic.open_float, { desc = 'show lsp notifications of sele
 k('n', 'gr', vim.lsp.buf.references, { desc = 'show references of selected element'})
 k('n', 'gi', vim.lsp.buf.implementation, { desc = 'show implementation of selected element'})
 
--- Move Text up and down
-k("v", '<A-k>', ":move '<-2<CR>gv-gv", opts('Moves Window Up'))
-k("v", '<A-j>', ":move '>+1<CR>gv-gv", opts('Moves Window Down'))
-k("x", "<A-k>", ":move '<-2<CR>gv-gv", opts('Moves Window Up'))
-k("x", "<A-j>", ":move '>+1<CR>gv-gv", opts('Moves Window Down'))
+-- Move Text up and dow
+k("v", '<C-k>', ":move '<-2<CR>gv-gv", opts('Moves text Up'))
+k("v", '<C-j>', ":move '>+1<CR>gv-gv", opts('Moves text Down'))
+k("x", "<C-k>", ":move '<-2<CR>gv-gv", opts('Moves text Up'))
+k("x", "<C-j>", ":move '>+1<CR>gv-gv", opts('Moves text Down'))
 
 -- Copy and Paste to/from specific registry
