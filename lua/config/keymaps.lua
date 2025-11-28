@@ -54,8 +54,8 @@ k('n', '<S-l>', '<C-w>l', opts('Move to window to the right'))
 -- Resize with arrows
 k("n", "<C-Up>", ":resize -2<CR>", opts('resize to up'))
 k("n", "<C-Down>", ":resize +2<CR>", opts('resize to down'))
-k("n", "<C-Left>", ":vertical resize -2<CR>", opts('resize to left'))
-k("n", "<C-Right>", ":vertical resize +2<CR>", opts('resize to right'))
+k("n", "<C-Right>", ":vertical resize -2<CR>", opts('resize to left'))
+k("n", "<C-Left>", ":vertical resize +2<CR>", opts('resize to right'))
 
 
 -- Create Windows
