@@ -1,3 +1,5 @@
+local lspconfig = require("lspconfig")
+
 return {
   cmd = { "clangd", "--compile-commands-dir=" ..vim.fn.getcwd() .. "/build" },
   filetypes = { "cpp", "c", "objc", "objcpp" },
