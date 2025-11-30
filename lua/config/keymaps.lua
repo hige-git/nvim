@@ -76,8 +76,8 @@ else
 end
 
 -- Navigate Tabs
--- k('n', '<tab>', ':tabn<CR>') -- needs to be fixed to work with tabout
--- k('n', '<S-tab>', ':tabp<CR>')
+k('n', '<S-k>', ':tabn<CR>') 
+k('n', '<S-j>', ':tabp<CR>')
 k('n', '<A-0>', ':tabfirst<CR>')
 k('n', '<A-$>' , ':tablast<CR>')
 -- k("n", "<S-l>", ":bnext<CR>", opts)
