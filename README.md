@@ -10,15 +10,17 @@
 - [nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects)
 - [tabout](https://github.com/abecodes/tabout.nvim)
 - [flash.nvim](https://github.com/folke/flash.nvim)
-- [vscode-vimdiff](https://github.com/esmuellert/vscode-diff.nvim)
 - [feline.nvim](https://github.com/famiu/feline.nvim)
 - fmt_utils
-    - [treesj](https://github.com/Wansmer/treesj)
-    - [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
-    - [mini.surround](https://github.com/nvim-mini/mini.surround)
+    - [] [treesj](https://github.com/Wansmer/treesj)
+    - [x] [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
+    - [x] [mini.surround](https://github.com/nvim-mini/mini.surround)
+
 
 ### Testing
 - [oil.nvim](https://github.com/stevearc/oil.nvim)
+- [snacks.nvim](https://github.com/folke/snacks.nvim/tree/main)
+- [Markdown-plus](https://github.com/YousefHadder/markdown-plus.nvim) 
 
 ## ToDevelop/find
 - Clipboard Registry tool

@@ -76,10 +76,10 @@ else
 end
 
 -- Navigate Tabs
-k('n', '<tab>', ':tabn<CR>')
-k('n', '<S-tab>', ':tabp<CR>')
-k('n', '<A-1>', ':tabfirst<CR>')
-k('n', '<A-0>' , ':tablast<CR>')
+-- k('n', '<tab>', ':tabn<CR>') -- needs to be fixed to work with tabout
+-- k('n', '<S-tab>', ':tabp<CR>')
+k('n', '<A-0>', ':tabfirst<CR>')
+k('n', '<A-$>' , ':tablast<CR>')
 -- k("n", "<S-l>", ":bnext<CR>", opts)
 -- k("n", "<S-h>", ":bprevious<CR>", opts)
 
