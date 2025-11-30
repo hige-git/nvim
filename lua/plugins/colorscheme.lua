@@ -1,13 +1,13 @@
 return {
-  "savq/melange-nvim",
-  priority = 1000,
-  config = function ()
-    local colorscheme = "melange"
-    local ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
-
-    if not ok then
-      vim.notify("Colorscheme " .. colorscheme .. "not found!")
-    end
-  end
+  "lmantw/themify.nvim",
+  lazy = false,
+  priority = 999,
+  config = {
+    "savq/melange-nvim",
+    "folke/tokyonight.nvim",
+    "rebelot/kanagawa.nvim",
+    "sainnhe/gruvbox-material",
+    "mellow-theme/mellow.nvim",
+  },
 }
 
