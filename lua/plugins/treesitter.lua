@@ -14,6 +14,7 @@ local parsers = {
 return {
   {
     "nvim-treesitter/nvim-treesitter",
+    event = { "BufReadPre", "BufNewFile" },
     build = ":TSUpdate",
     opts = {
       ensure_installed = parsers,
@@ -38,6 +39,9 @@ return {
         enable = true,
       },
     },
+    config = function (_, opts)
+      require("nvim-treesitter.configs").setup(opts)
+    end,
   },
 
   "nvim-treesitter/nvim-treesitter-textobjects",
