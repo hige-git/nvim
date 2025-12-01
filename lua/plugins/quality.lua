@@ -26,6 +26,19 @@ return {
        theme = 'gruvbox_dark',
     },
    }
+ },
+ {
+   "akinsho/bufferline.nvim",
+   version = "*",
+   dependencies = "nvim-tree/nvim-web-devicons",
+   opts = {
+     options = {
+       mode = "tabs",
+       truncate_names = true,
+       max_name_length = 18,
+       path = 0
+     }
+   }
  }
 }
 
