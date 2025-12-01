@@ -10,7 +10,7 @@
 - [flash.nvim](https://github.com/folke/flash.nvim)
 - [feline.nvim](https://github.com/famiu/feline.nvim)
 - fmt_utils
-    - [treesj](https://github.com/Wansmer/treesj)
+    - [ ] [treesj](https://github.com/Wansmer/treesj)
     - [x] [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
     - [x] [mini.surround](https://github.com/nvim-mini/mini.surround)
 
