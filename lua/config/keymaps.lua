@@ -32,7 +32,7 @@ k("n", "cd", ":cd %:p:h<CR>", opts('Changes directory of session to current buff
 k("n", "<leader>cd", ":CodeDiff<CR>", opts('Shows code diff in git repo'))
 
 -- Themefy
-k("n", "<leader>f", ":Themefy<CR>", opts('Opens Theme selector'))
+k("n", "<leader>f", ":Themify<CR>", opts('Opens Theme selector'))
 
 -- Fuzzy Finder
 k("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { desc = 'Find files with telescope' })
