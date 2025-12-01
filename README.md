@@ -7,12 +7,10 @@
 - tmux_utils
    - [vim-tpipeline](https://github.com/vimpostor/vim-tpipeline)
     - [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
-- [nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects)
-- [tabout](https://github.com/abecodes/tabout.nvim)
 - [flash.nvim](https://github.com/folke/flash.nvim)
 - [feline.nvim](https://github.com/famiu/feline.nvim)
 - fmt_utils
-    - [] [treesj](https://github.com/Wansmer/treesj)
+    - [treesj](https://github.com/Wansmer/treesj)
     - [x] [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
     - [x] [mini.surround](https://github.com/nvim-mini/mini.surround)
 

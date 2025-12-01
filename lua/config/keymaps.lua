@@ -26,6 +26,7 @@ vim.g.maplocalleader = " "
 -- Make my life easier
 k("n", "<Esc><Esc>", ":noh<CR>", opts('Disables Text highlighting if active'))
 k("n", "<leader>w", ":w<CR>", opts('writes to file'))
+k("n", "cd", ":cd %:p:h<CR>", opts('Changes directory of session to current buffer'))
 
 -- Code Diff
 k("n", "<leader>cd", ":CodeDiff<CR>", opts('Shows code diff in git repo'))
@@ -69,8 +70,9 @@ k('n', '<leader>h', ':horizontal split <CR>', opts('Creates horizontal split pan
 k('n', '<leader>n', ':tabnew <CR>', opts('Creates new tab'))
 
 -- Close Windows
+k('n', '<leader>X', ':qa<CR>', opts('Closes entire nvim'))
 if #vim.api.nvim_list_wins() <= 1 then
-  k('n', '<leader>x', ':q<CR>', opts('Closes the nvim'))
+  k('n', '<leader>x', ':q<CR>', opts('Closes nvim'))
 else
   k('n', '<leader>x', '<C-w>c', opts('Closes the window'))
 end
