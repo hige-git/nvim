@@ -24,6 +24,7 @@ return {
    opts = {
      options ={
        theme = 'gruvbox_dark',
+       tabline = {},
     },
    }
  },
