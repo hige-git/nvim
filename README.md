@@ -15,10 +15,11 @@
     - [x] [mini.surround](https://github.com/nvim-mini/mini.surround)
 
 
-### Testing
+### Checkout/Test
 - [oil.nvim](https://github.com/stevearc/oil.nvim)
 - [snacks.nvim](https://github.com/folke/snacks.nvim/tree/main)
 - [Markdown-plus](https://github.com/YousefHadder/markdown-plus.nvim) 
+- [lazy-git](https://github.com/jesseduffield/lazygit)
 
 ## ToDevelop/find
 - Clipboard Registry tool
