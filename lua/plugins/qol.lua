@@ -17,16 +17,7 @@ return {
   },
  },
  {
-   "nvim-lualine/lualine.nvim",
-   dependencies = {
-     "nvim-tree/nvim-web-devicons",
-   },
-   opts = {
-     options ={
-       theme = 'gruvbox_dark',
-       tabline = {},
-    },
-   }
+  "christoomey/vim-tmux-navigator",
  },
  {
    "akinsho/bufferline.nvim",
