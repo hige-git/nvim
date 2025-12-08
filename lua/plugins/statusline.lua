@@ -6,7 +6,7 @@ return {
    },
    opts = {
      options = {
-       theme = 'gruvbox_material',
+       theme = 'gruvbox-material',
     },
    }
  },
