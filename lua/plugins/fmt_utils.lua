@@ -54,6 +54,11 @@ return {
       },
     },
   },
+  {
+    'glepnir/flybuf.nvim',
+    cmd = 'FlyBuf',
+    opts = {},
+  }
 }
 
 

@@ -34,6 +34,8 @@ k("n", "<leader>cd", ":CodeDiff<CR>", opts('Shows code diff in git repo'))
 -- Themefy
 k("n", "<leader>f", ":Themify<CR>", opts('Opens Theme selector'))
 
+-- Flybuf
+k('n', "<leader>b", ":FlyBuf<CR>", opts('Opens Buffer selection'))
 -- Fuzzy Finder
 k("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { desc = 'Find files with telescope' })
 k("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", { desc = 'Grep lines through telescope' })
