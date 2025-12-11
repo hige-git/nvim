@@ -22,14 +22,17 @@ vim.g.maplocalleader = " "
 -- terminal = t     <- Entered by pressing space + t according to toggle definition
 -- command_mode = c <- Entered by pressing : 
 
+-- Neogit
+k("n", "<leader>gs", ":Neogit<CR>", {desc = 'Show git status' })
+k("n", "<leader>gc", ":Neogit commit<CR>", {desc = 'commit current changes' })
+k("n", "<leader>gb", ":Neogit branch<CR>", {desc = 'switch branch' })
+k("n", "<leader>gp", ":Neogit push<CR>", {desc = 'push new commits' })
+k("n", "<leader>gd", ":CodeDiff<CR>", {desc = 'Open CodeDiff' })
 
 -- Make my life easier
 k("n", "<Esc><Esc>", ":noh<CR>", opts('Disables Text highlighting if active'))
 k("n", "<leader>w", ":w<CR>", opts('writes to file'))
 k("n", "cd", ":cd %:p:h<CR>", opts('Changes directory of session to current buffer'))
-
--- Code Diff
-k("n", "<leader>cd", ":CodeDiff<CR>", opts('Shows code diff in git repo'))
 
 -- Themefy
 k("n", "<leader>f", ":Themify<CR>", opts('Opens Theme selector'))
@@ -41,9 +44,6 @@ k("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { desc = 'Find files with 
 k("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", { desc = 'Grep lines through telescope' })
 k("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = 'List Buffers, with telescope' })
 k("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", { desc = 'Fuzzy find help' })
-
--- File Tree
-k('n', '<leader>e', '<cmd>Neotree toggle<CR>', { desc = 'Open filetree' })
 
 -- Terminal Mode
 k('n', '<leader>t', '<cmd>ToggleTerm<CR>', { desc = '' }) -- To close again ctrl + d

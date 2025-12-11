@@ -1,14 +1,10 @@
 return {
 	"nvim-telescope/telescope.nvim",
-  dependencies = { 
+  dependencies = {
     "nvim-lua/plenary.nvim",
   },
   opts = {
     defaults = {
-      mappings = {
-        i = {
-          ["<esc>"] = "close",
-        },
       },
     },
     pickers = {
@@ -17,5 +13,5 @@ return {
         no_ignore = true,
       },
     },
-  }
 }
+
