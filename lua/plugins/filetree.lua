@@ -17,6 +17,7 @@ return {
  },
  {
    "stevearc/oil.nvim",
+   lazy = false,
    opts = {
     default_file_explorer = true,
     columns = { "icon" },
@@ -38,7 +39,7 @@ return {
    },
    keys = {
     { "-", "<cmd>Oil<CR>", desc = "Open current dir in Oil" },
-    { "<leader>o", "<cmd>Oil<CR>", desc = "Open Oil" },
+    { "<leader>e", "<cmd>Oil<CR>", desc = "Open Oil" },
    },
  }
 }
