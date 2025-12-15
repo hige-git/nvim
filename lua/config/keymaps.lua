@@ -24,9 +24,13 @@ vim.g.maplocalleader = " "
 
 -- Neogit
 k("n", "<leader>gs", ":Neogit<CR>", {desc = 'Show git status' })
+k("n", "<leader>gS", ":Neogit stash<CR>", {desc = 'stash current staged' })
 k("n", "<leader>gc", ":Neogit commit<CR>", {desc = 'commit current changes' })
 k("n", "<leader>gb", ":Neogit branch<CR>", {desc = 'switch branch' })
-k("n", "<leader>gp", ":Neogit push<CR>", {desc = 'push new commits' })
+k("n", "<leader>gf", ":Neogit fetch<CR>", {desc = 'fetch from origin' })
+k("n", "<leader>gr", ":Neogit rebase<CR>", {desc = 'rebase current branch' })
+k("n", "<leader>gp", ":Neogit pull<CR>", {desc = 'pull from origin' })
+k("n", "<leader>gP", ":Neogit push<CR>", {desc = 'push new commits' })
 k("n", "<leader>gd", ":CodeDiff<CR>", {desc = 'Open CodeDiff' })
 
 -- Make my life easier
