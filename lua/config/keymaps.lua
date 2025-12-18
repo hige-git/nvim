@@ -57,12 +57,6 @@ k('t', '<Esc>', '<C-\\><C-n>')
 k('v', '<', '<gv', opts('Indent to the right in v mode'))
 k('v', '>', '>gv', opts('Indent to the left in v mode'))
 
--- Better Window Managment
-k('n', '<S-h>', '<C-w>h', opts('Move to window to the left'))
-k('n', '<S-j>', '<C-w>j', opts('Move to window to the under'))
-k('n', '<S-k>', '<C-w>k', opts('Move to window to the upper'))
-k('n', '<S-l>', '<C-w>l', opts('Move to window to the right'))
-
 -- Resize with arrows
 k("n", "<C-Up>", ":resize -2<CR>", opts('resize to up'))
 k("n", "<C-Down>", ":resize +2<CR>", opts('resize to down'))
@@ -83,11 +77,6 @@ else
   k('n', '<leader>x', '<C-w>c', opts('Closes the window'))
 end
 
--- Navigate Tabs
-k('n', '<S-k>', ':tabn<CR>') 
-k('n', '<S-j>', ':tabp<CR>')
-k('n', '<A-0>', ':tabfirst<CR>')
-k('n', '<A-$>' , ':tablast<CR>')
 -- k("n", "<S-l>", ":bnext<CR>", opts)
 -- k("n", "<S-h>", ":bprevious<CR>", opts)
 
