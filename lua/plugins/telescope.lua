@@ -3,14 +3,18 @@ return {
   dependencies = {
     "nvim-lua/plenary.nvim",
   },
+  config = function ()
+    require('telescope').setup({
+      pickers = {
+        find_files = {
+          hidden = true,
+          no_ignore = true,
+        }
+      }
+    })
+  end,
   opts = {
     defaults = {
-      },
-    },
-    pickers = {
-      find_files = {
-        hidden = true,
-        no_ignore = true,
       },
     },
 }

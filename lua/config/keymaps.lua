@@ -37,6 +37,7 @@ k("n", "<leader>gd", ":CodeDiff<CR>", {desc = 'Open CodeDiff' })
 k("n", "<Esc><Esc>", ":noh<CR>", opts('Disables Text highlighting if active'))
 k("n", "<leader>w", ":w<CR>", opts('writes to file'))
 k("n", "cd", ":cd %:p:h<CR>", opts('Changes directory of session to current buffer'))
+k("n", "<leader>e", ":Neotree toggle<CR>", opts('Opens Neotree'))
 
 -- Themefy
 k("n", "<leader>f", ":Themify<CR>", opts('Opens Theme selector'))
