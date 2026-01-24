@@ -38,12 +38,12 @@ k("n", "<Esc><Esc>", ":noh<CR>", opts('Disables Text highlighting if active'))
 k("n", "<leader>w", ":w<CR>", opts('writes to file'))
 k("n", "cd", ":cd %:p:h<CR>", opts('Changes directory of session to current buffer'))
 k("n", "<leader>e", ":Neotree toggle<CR>", opts('Opens Neotree'))
+k("n", "<leader>m", ":tabnext<CR>", opts('Move to next Tab'))
 
--- Themefy
+-- QoL Plugins
 k("n", "<leader>f", ":Themify<CR>", opts('Opens Theme selector'))
-
--- Flybuf
 k('n', "<leader>b", ":FlyBuf<CR>", opts('Opens Buffer selection'))
+
 -- Fuzzy Finder
 k("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { desc = 'Find files with telescope' })
 k("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", { desc = 'Grep lines through telescope' })
