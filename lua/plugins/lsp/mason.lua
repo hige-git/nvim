@@ -10,6 +10,14 @@ local lang_servers = {
   "terraformls",
 }
 
+local tools = {
+  "prettier",
+  "goimports",
+  "rustfmt",
+  "luaformatter",
+  "black",
+}
+
 return {
   {
     "mason-org/mason.nvim",
@@ -20,7 +28,14 @@ return {
       registries = { "github:mason-org/mason-registry" },
     },
   },
- {
+  {
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    dependencies = { "mason-org/mason.nvim" },
+    opts = {
+      ensure_installed = tools,
+    }
+  },
+  {
     "mason-org/mason-lspconfig.nvim",
     dependencies = { "mason-org/mason.nvim" },
     opts = {

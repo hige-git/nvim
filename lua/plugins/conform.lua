@@ -12,16 +12,16 @@ return {
         return { timeout_ms = 2000, async = true, lsp_format = "fallback" }
       end,
       formatters_by_ft = {
-        -- lua = { "mystylua" },
-        -- python = { "black" },
-        -- html = { "prettier" },
-        -- js = { "prettier" },
-        -- php = { "prettier" },
+        lua = { "mystylua" },
+        python = { "black" },
+        html = { "prettier" },
+        js = { "prettier" },
+        php = { "prettier" },
         go = { "gofmt", "goimports" },
         -- templ = { "templ" },
         -- sql = { "sqlfmt" },
-        -- json = { "prettier" },
-        -- rust = { "rustfmt" },
+        json = { "prettier" },
+        rust = { "rustfmt" },
       },
       formatters = {
         mystylua = {
