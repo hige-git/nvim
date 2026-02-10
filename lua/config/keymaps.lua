@@ -20,18 +20,18 @@ vim.g.maplocalleader = " "
 -- visual = v       <- Entered by Typing v for one letter or Shift + V for a line
 -- visual_block = x <- Entered by typing ctrl + V
 -- terminal = t     <- Entered by pressing space + t according to toggle definition
--- command_mode = c <- Entered by pressing : 
+-- command_mode = c <- Entered by pressing :
 
 -- Neogit
-k("n", "<leader>gs", ":Neogit<CR>", {desc = 'Show git status' })
-k("n", "<leader>gS", ":Neogit stash<CR>", {desc = 'stash current staged' })
-k("n", "<leader>gc", ":Neogit commit<CR>", {desc = 'commit current changes' })
-k("n", "<leader>gb", ":Neogit branch<CR>", {desc = 'switch branch' })
-k("n", "<leader>gf", ":Neogit fetch<CR>", {desc = 'fetch from origin' })
-k("n", "<leader>gr", ":Neogit rebase<CR>", {desc = 'rebase current branch' })
-k("n", "<leader>gp", ":Neogit pull<CR>", {desc = 'pull from origin' })
-k("n", "<leader>gP", ":Neogit push<CR>", {desc = 'push new commits' })
-k("n", "<leader>gd", ":CodeDiff<CR>", {desc = 'Open CodeDiff' })
+k("n", "<leader>gs", ":Neogit<CR>", { desc = 'Show git status' })
+k("n", "<leader>gS", ":Neogit stash<CR>", { desc = 'stash current staged' })
+k("n", "<leader>gc", ":Neogit commit<CR>", { desc = 'commit current changes' })
+k("n", "<leader>gb", ":Neogit branch<CR>", { desc = 'switch branch' })
+k("n", "<leader>gf", ":Neogit fetch<CR>", { desc = 'fetch from origin' })
+k("n", "<leader>gr", ":Neogit rebase<CR>", { desc = 'rebase current branch' })
+k("n", "<leader>gp", ":Neogit pull<CR>", { desc = 'pull from origin' })
+k("n", "<leader>gP", ":Neogit push<CR>", { desc = 'push new commits' })
+k("n", "<leader>gd", ":CodeDiff<CR>", { desc = 'Open CodeDiff' })
 
 -- Make my life easier
 k("n", "<Esc><Esc>", ":noh<CR>", opts('Disables Text highlighting if active'))
@@ -41,7 +41,7 @@ k("n", "<leader>e", ":Neotree toggle<CR>", opts('Opens Neotree'))
 k("n", "<leader>m", ":tabnext<CR>", opts('Move to next Tab'))
 
 -- QoL Plugins
-k("n", "<leader>f", ":Themify<CR>", opts('Opens Theme selector'))
+k("n", "<leader>cs", ":Themify<CR>", opts('Opens Theme selector'))
 k('n', "<leader>b", ":FlyBuf<CR>", opts('Opens Buffer selection'))
 
 -- Fuzzy Finder
@@ -82,10 +82,10 @@ end
 -- k("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- lsp infos
-k('n', 'gf', vim.lsp.buf.hover, { desc = 'show hover of selected element'})
-k('n', 'gl', vim.diagnostic.open_float, { desc = 'show lsp notifications of selected element'})
-k('n', 'gr', vim.lsp.buf.references, { desc = 'show references of selected element'})
-k('n', 'gi', vim.lsp.buf.implementation, { desc = 'show implementation of selected element'})
+k('n', 'gf', vim.lsp.buf.hover, { desc = 'show hover of selected element' })
+k('n', 'gl', vim.diagnostic.open_float, { desc = 'show lsp notifications of selected element' })
+k('n', 'gr', vim.lsp.buf.references, { desc = 'show references of selected element' })
+k('n', 'gi', vim.lsp.buf.implementation, { desc = 'show implementation of selected element' })
 
 -- Move Text up and dow
 k("v", '<C-k>', ":move '<-2<CR>gv-gv", opts('Moves text Up'))
