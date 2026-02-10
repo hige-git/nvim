@@ -1,13 +1,13 @@
-return {
-  "lmantw/themify.nvim",
-  lazy = false,
-  priority = 999,
-  config = {
-    "savq/melange-nvim",
-    "folke/tokyonight.nvim",
-    "rebelot/kanagawa.nvim",
-    "sainnhe/gruvbox-material",
-    "mellow-theme/mellow.nvim",
-  },
-}
+local gruvbox_material = require("plugins.colorschemes.gruvbox_material")
 
+
+return {
+  "LmanTW/themify.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = {
+    "loctvl842/monokai-pro.nvim",
+    "folke/tokyonight.nvim",
+    gruvbox_material,
+  }
+}

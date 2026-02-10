@@ -20,30 +20,35 @@ vim.g.maplocalleader = " "
 -- visual = v       <- Entered by Typing v for one letter or Shift + V for a line
 -- visual_block = x <- Entered by typing ctrl + V
 -- terminal = t     <- Entered by pressing space + t according to toggle definition
--- command_mode = c <- Entered by pressing : 
+-- command_mode = c <- Entered by pressing :
 
+-- Neogit
+k("n", "<leader>gs", ":Neogit<CR>", { desc = 'Show git status' })
+k("n", "<leader>gS", ":Neogit stash<CR>", { desc = 'stash current staged' })
+k("n", "<leader>gc", ":Neogit commit<CR>", { desc = 'commit current changes' })
+k("n", "<leader>gb", ":Neogit branch<CR>", { desc = 'switch branch' })
+k("n", "<leader>gf", ":Neogit fetch<CR>", { desc = 'fetch from origin' })
+k("n", "<leader>gr", ":Neogit rebase<CR>", { desc = 'rebase current branch' })
+k("n", "<leader>gp", ":Neogit pull<CR>", { desc = 'pull from origin' })
+k("n", "<leader>gP", ":Neogit push<CR>", { desc = 'push new commits' })
+k("n", "<leader>gd", ":CodeDiff<CR>", { desc = 'Open CodeDiff' })
 
 -- Make my life easier
 k("n", "<Esc><Esc>", ":noh<CR>", opts('Disables Text highlighting if active'))
 k("n", "<leader>w", ":w<CR>", opts('writes to file'))
 k("n", "cd", ":cd %:p:h<CR>", opts('Changes directory of session to current buffer'))
+k("n", "<leader>e", ":Neotree toggle<CR>", opts('Opens Neotree'))
+k("n", "<leader>m", ":tabnext<CR>", opts('Move to next Tab'))
 
--- Code Diff
-k("n", "<leader>cd", ":CodeDiff<CR>", opts('Shows code diff in git repo'))
-
--- Themefy
-k("n", "<leader>f", ":Themify<CR>", opts('Opens Theme selector'))
-
--- Flybuf
+-- QoL Plugins
+k("n", "<leader>cs", ":Themify<CR>", opts('Opens Theme selector'))
 k('n', "<leader>b", ":FlyBuf<CR>", opts('Opens Buffer selection'))
+
 -- Fuzzy Finder
 k("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { desc = 'Find files with telescope' })
 k("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", { desc = 'Grep lines through telescope' })
 k("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = 'List Buffers, with telescope' })
 k("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", { desc = 'Fuzzy find help' })
-
--- File Tree
-k('n', '<leader>e', '<cmd>Neotree toggle<CR>', { desc = 'Open filetree' })
 
 -- Terminal Mode
 k('n', '<leader>t', '<cmd>ToggleTerm<CR>', { desc = '' }) -- To close again ctrl + d
@@ -52,12 +57,6 @@ k('t', '<Esc>', '<C-\\><C-n>')
 -- Indent Mode
 k('v', '<', '<gv', opts('Indent to the right in v mode'))
 k('v', '>', '>gv', opts('Indent to the left in v mode'))
-
--- Better Window Managment
-k('n', '<S-h>', '<C-w>h', opts('Move to window to the left'))
-k('n', '<S-j>', '<C-w>j', opts('Move to window to the under'))
-k('n', '<S-k>', '<C-w>k', opts('Move to window to the upper'))
-k('n', '<S-l>', '<C-w>l', opts('Move to window to the right'))
 
 -- Resize with arrows
 k("n", "<C-Up>", ":resize -2<CR>", opts('resize to up'))
@@ -79,19 +78,14 @@ else
   k('n', '<leader>x', '<C-w>c', opts('Closes the window'))
 end
 
--- Navigate Tabs
-k('n', '<S-k>', ':tabn<CR>') 
-k('n', '<S-j>', ':tabp<CR>')
-k('n', '<A-0>', ':tabfirst<CR>')
-k('n', '<A-$>' , ':tablast<CR>')
 -- k("n", "<S-l>", ":bnext<CR>", opts)
 -- k("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- lsp infos
-k('n', 'gf', vim.lsp.buf.hover, { desc = 'show hover of selected element'})
-k('n', 'gl', vim.diagnostic.open_float, { desc = 'show lsp notifications of selected element'})
-k('n', 'gr', vim.lsp.buf.references, { desc = 'show references of selected element'})
-k('n', 'gi', vim.lsp.buf.implementation, { desc = 'show implementation of selected element'})
+k('n', 'gf', vim.lsp.buf.hover, { desc = 'show hover of selected element' })
+k('n', 'gl', vim.diagnostic.open_float, { desc = 'show lsp notifications of selected element' })
+k('n', 'gr', vim.lsp.buf.references, { desc = 'show references of selected element' })
+k('n', 'gi', vim.lsp.buf.implementation, { desc = 'show implementation of selected element' })
 
 -- Move Text up and dow
 k("v", '<C-k>', ":move '<-2<CR>gv-gv", opts('Moves text Up'))

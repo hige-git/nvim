@@ -1,21 +1,21 @@
 return {
 	"nvim-telescope/telescope.nvim",
-  dependencies = { 
+  dependencies = {
     "nvim-lua/plenary.nvim",
   },
+  config = function ()
+    require('telescope').setup({
+      pickers = {
+        find_files = {
+          hidden = false,
+          no_ignore = false,
+        }
+      }
+    })
+  end,
   opts = {
     defaults = {
-      mappings = {
-        i = {
-          ["<esc>"] = "close",
-        },
       },
     },
-    pickers = {
-      find_files = {
-        hidden = true,
-        no_ignore = true,
-      },
-    },
-  }
 }
+
