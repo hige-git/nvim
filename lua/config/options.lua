@@ -4,7 +4,7 @@ local o = vim.opt
 
 o.backup = false
 o.clipboard = "unnamedplus"				                -- Changes copy and paste registries to sysmte wide
-o.cmdheight = 2						                        -- Changes the height of command line for displaying messages
+o.cmdheight = 1						                        -- Changes the height of command line for displaying messages
 o.completeopt = { "noselect", "menu", "menuone" }	-- for cmp plugins
 o.conceallevel = 0					                      -- so that `` is visible in markdown files
 o.fileencoding = "utf-8"				                  -- Encoding of written in a file

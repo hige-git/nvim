@@ -16,6 +16,10 @@ return {
     "nvim-treesitter/nvim-treesitter",
     event = { "BufReadPre", "BufNewFile" },
     build = ":TSUpdate",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter-textobjects",
+      "nvim-treesitter/nvim-treesitter-context",
+    },
     opts = {
       ensure_installed = parsers,
       auto_install = true,
@@ -39,11 +43,5 @@ return {
         enable = true,
       },
     },
-    config = function (_, opts)
-      require("nvim-treesitter.configs").setup(opts)
-    end,
   },
-
-  "nvim-treesitter/nvim-treesitter-textobjects",
-  "nvim-treesitter/nvim-treesitter-context",
 }

@@ -1,39 +1,40 @@
 return {
- {
-   "nvim-lualine/lualine.nvim",
-   dependencies = {
-     "nvim-tree/nvim-web-devicons",
-   },
-   opts = {
-     options = {
-       theme = 'gruvbox-material',
+  {
+    "nvim-lualine/lualine.nvim",
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
     },
-   }
- },
- {
-   'folke/noice.nvim',
-   dependencies = {
-     'MunifTanjim/nui.nvim',
-     {
-       'rcarriga/nvim-notify',
-       opts = {
-         render = "compact",
-         stages = "fade",
-       },
-     },
-   },
-   events = 'VeryLazy',
-   opts = {
-     views = {
-       cmdline_popup = {
-         position = {
-           row = 5,
-           col = "50%",
-         },
-       },
-     },
-   },
- },
+    opts = {
+      options = {
+        theme = 'gruvbox-material',
+      },
+    }
+  },
+  {
+    'folke/noice.nvim',
+    enabled = false,
+    dependencies = {
+      'MunifTanjim/nui.nvim',
+      {
+        'rcarriga/nvim-notify',
+        opts = {
+          render = "compact",
+          stages = "fade",
+        },
+      },
+    },
+    events = 'VeryLazy',
+    opts = {
+      views = {
+        cmdline_popup = {
+          position = {
+            row = 5,
+            col = "50%",
+          },
+        },
+      },
+    },
+  },
   -- {
   --   "vimpostor/vim-tpipeline",
   --   config = function ()
