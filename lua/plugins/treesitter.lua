@@ -9,6 +9,9 @@ local parsers = {
   "regex",
   "bash",
   "sql",
+  "html",
+  "typescript",
+  "vue",
 }
 
 return {

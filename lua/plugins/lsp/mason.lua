@@ -1,22 +1,4 @@
-local lang_servers = {
-  "clangd",
-  "pyright",
-  "gopls",
-  "marksman",
-  "lua_ls",
-  "rust_analyzer",
-  "bashls",
-  "texlab",
-  "terraformls",
-}
-
-local tools = {
-  "prettier",
-  "goimports",
-  "rustfmt",
-  "luaformatter",
-  "black",
-}
+local _, install = pcall(require, "plugins.lsp.install")
 
 return {
   {
@@ -32,7 +14,7 @@ return {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
     dependencies = { "mason-org/mason.nvim" },
     opts = {
-      ensure_installed = tools,
+      ensure_installed = install.tools,
     }
   },
   {
@@ -40,7 +22,7 @@ return {
     dependencies = { "mason-org/mason.nvim" },
     opts = {
       automatic_installation = true,
-      ensure_installed = lang_servers,
+      ensure_installed = install.lang_serves,
     },
 
     config = function(_, plugin_opts)
@@ -62,7 +44,10 @@ return {
               server_opts = vim.tbl_deep_extend("force", server_opts, conf)
             end
 
-            vim.lsp.config[server].setup(server_opts)
+            print(server_opts)
+            vim.lsp.config(server, server_opts)
+            vim.lsp.enable(server)
+            -- vim.lsp.config[server].setup(server_opts)
           end,
         },
       })
