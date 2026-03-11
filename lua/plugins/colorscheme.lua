@@ -9,5 +9,8 @@ return {
     "loctvl842/monokai-pro.nvim",
     "folke/tokyonight.nvim",
     gruvbox_material,
+  },
+  keys = {
+    { "<leader>cs", mode = "n", "<cmd>Themify<CR>", desc = "Toggles theme selector" },
   }
 }

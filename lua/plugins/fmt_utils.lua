@@ -1,10 +1,8 @@
 return {
   {
-    "windwp/nvim-autopairs",
-    event = "InsertEnter",
-    opts = {
-      map_cr = false,
-    },
+    "nvim-mini/mini.pairs",
+    version = false,
+    opts = {}
   },
   {
     'abecodes/tabout.nvim',
@@ -56,9 +54,4 @@ return {
       },
     },
   },
-  {
-    'glepnir/flybuf.nvim',
-    cmd = 'FlyBuf',
-    opts = {},
-  }
 }

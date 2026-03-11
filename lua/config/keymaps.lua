@@ -22,38 +22,12 @@ vim.g.maplocalleader = " "
 -- terminal = t     <- Entered by pressing space + t according to toggle definition
 -- command_mode = c <- Entered by pressing :
 
--- Neogit
-k("n", "<leader>gs", ":Neogit<CR>", { desc = 'Show git status' })
-k("n", "<leader>gS", ":Neogit stash<CR>", { desc = 'stash current staged' })
-k("n", "<leader>gc", ":Neogit commit<CR>", { desc = 'commit current changes' })
-k("n", "<leader>gb", ":Neogit branch<CR>", { desc = 'switch branch' })
-k("n", "<leader>gf", ":Neogit fetch<CR>", { desc = 'fetch from origin' })
-k("n", "<leader>gr", ":Neogit rebase<CR>", { desc = 'rebase current branch' })
-k("n", "<leader>gp", ":Neogit pull<CR>", { desc = 'pull from origin' })
-k("n", "<leader>gP", ":Neogit push<CR>", { desc = 'push new commits' })
-k("n", "<leader>gd", ":CodeDiff<CR>", { desc = 'Open CodeDiff' })
-
 -- Make my life easier
 k("n", "<Esc><Esc>", ":noh<CR>", opts('Disables Text highlighting if active'))
 k("n", "<leader>w", ":w<CR>", opts('writes to file'))
 k("n", "cd", ":cd %:p:h<CR>", opts('Changes directory of session to current buffer'))
-k("n", "<leader>e", ":Neotree toggle<CR>", opts('Opens Neotree file explorer'))
-k("n", "<leader><S-e>", ":Neotree buffers<CR>", opts('Opens Neotree buffer explorer'))
 k("n", "<leader>m", ":tabnext<CR>", opts('Move to next Tab'))
-
--- QoL Plugins
-k("n", "<leader>cs", ":Themify<CR>", opts('Opens Theme selector'))
-k('n', "<leader>b", ":FlyBuf<CR>", opts('Opens Buffer selection'))
-
--- Fuzzy Finder
-k("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { desc = 'Find files with telescope' })
-k("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", { desc = 'Grep lines through telescope' })
-k("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = 'List Buffers, with telescope' })
-k("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", { desc = 'Fuzzy find help' })
-
--- Terminal Mode
-k('n', '<leader>t', '<cmd>ToggleTerm<CR>', { desc = '' }) -- To close again ctrl + d
-k('t', '<Esc>', '<C-\\><C-n>')
+k("n", "<leader>bs", '<C-^>', { desc = "Jump to last buffer" })
 
 -- Indent Mode
 k('v', '<', '<gv', opts('Indent to the right in v mode'))
@@ -78,9 +52,6 @@ if #vim.api.nvim_list_wins() <= 1 then
 else
   k('n', '<leader>x', '<C-w>c', opts('Closes the window'))
 end
-
--- k("n", "<S-l>", ":bnext<CR>", opts)
--- k("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- lsp infos
 k('n', 'gf', vim.lsp.buf.hover, { desc = 'show hover of selected element' })
