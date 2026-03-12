@@ -22,8 +22,8 @@ return {
       }
     },
     keys = {
-      { "n", "<leader>e",     "<cmd>Neotree toggle<CR>",  desc = "Opens file tree" },
-      { "n", "<leader><S-e>", "<cmd>Neotree buffers<CR>", desc = "Opens buffer tree" }
+      { "<leader>e",     mode = "n", "<cmd>Neotree toggle<CR>",  desc = "Opens file tree" },
+      { "<leader><S-e>", mode = "n", "<cmd>Neotree buffers<CR>", desc = "Opens buffer tree" }
     }
   },
   {
