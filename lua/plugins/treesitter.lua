@@ -12,6 +12,7 @@ local parsers = {
   "html",
   "typescript",
   "vue",
+  "latex",
 }
 
 return {

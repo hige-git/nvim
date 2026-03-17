@@ -22,6 +22,7 @@ return {
         -- sql = { "sqlfmt" },
         json = { "prettier" },
         rust = { "rustfmt" },
+        latex = { "tex-fmt" },
       },
       formatters = {
         mystylua = {

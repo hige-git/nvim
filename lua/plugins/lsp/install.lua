@@ -13,6 +13,7 @@ M.lang_serves = {
   "html",
   "vue_ls",
   "vtsls",
+  "gitlab_ci_ls",
 }
 
 M.tools = {
@@ -21,6 +22,7 @@ M.tools = {
   "rustfmt",
   "luaformatter",
   "black",
+  "tex-fmt",
 }
 
 return M
