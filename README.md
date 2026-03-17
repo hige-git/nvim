@@ -2,7 +2,8 @@
 
 At the time of writing im using neovim with the version '0.11.6'
 
-[!NOTE]The Links lead to the github page of the tool, only the installed lsps and tools lead to the local configuration.
+> [!NOTE] 
+> The Links lead to the github page of the tool, only the installed lsps and tools lead to the local configuration.
 
 If used it might be needed to install some dependencies to compile or build stuff.
 For example, npm, cargo or even cmake.
