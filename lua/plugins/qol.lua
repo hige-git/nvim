@@ -44,7 +44,7 @@ return {
     opts = {}
   },
   {
-    'abecodes/tabout.nvim',
+    "abecodes/tabout.nvim",
     lazy = false,
     config = function()
       require('tabout').setup {
