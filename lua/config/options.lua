@@ -42,8 +42,7 @@ o.shortmess:append "c"
 o.foldmethod = "expr"                          -- to apply fold according to a expr defined in foldexpr
 o.foldexpr = "v:lua.vim.treesitter.foldexpr()" -- Allows to fold according to treesitter differenciating
 o.foldcolumn = "0"                             -- disables folding column (horizontal)
-o.foldtext =
-""                                             -- Disables foldtext, and diplays the line normally with highlighting and no line wrapping
+o.foldtext = ""                                -- Disables foldtext, and diplays the line normally with highlighting and no line wrapping
 o.foldlevel = 1                                -- Adjust number of folds that are closed
 o.foldlevelstart = 99                          -- Starts with no folds (99 is to high for any code)
 o.foldnestmax = 4                              -- Limits the maximal folds possible
