@@ -1,6 +1,6 @@
 local M = {}
 
-M.setup = function()
+M.setup_ui = function()
   vim.diagnostic.config({
     underline = true,
     update_in_insert = true,
@@ -34,17 +34,9 @@ M.setup = function()
       prefix = "",
     },
   })
-
-  vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-    border = "rounded",
-  })
-
-  vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
-    border = "rounded",
-  })
 end
 
-local function lsp_keymaps(bufnr)
+M.on_attach = function(_, bufnr)
   local k = vim.keymap.set
   local opts = { noremap = true, silent = true, buffer = bufnr }
   k("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
@@ -63,30 +55,32 @@ local function lsp_keymaps(bufnr)
   vim.cmd([[ command! Format execute 'lua vim.lsp.buf.format()' ]])
 end
 
-M.on_attach = function(_, bufnr)
-  lsp_keymaps(bufnr)
-end
+M.setup = function()
+  M.setup_ui()
 
-local lsp_flags = {
-  allow_incremental_sync = true,
-  debounce_text_changes = 150,
-}
+  local status_ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
+  local capabilities = status_ok and cmp_nvim_lsp.default_capabilities() or {}
 
-local status_ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
-if status_ok then
-  M.capabilities = cmp_nvim_lsp.default_capabilities()
+  local add_flags = {
+    allow_incremental_sync = true,
+    debounce_text_changes = 150,
+  }
+
   local _, install = pcall(require, "plugins.lsp.install")
 
   for _, server in ipairs(install.lang_serves) do
-    local ok, config = pcall(require, "plugins.lsp.lang." .. server)
-    if ok then
-      config.capabilities = vim.tbl_deep_extend("force", {}, M.capabilities, config.capabilities or {})
-      config.lsp_flags = vim.tbl_deep_extend("force", {}, lsp_flags, config.lsp_flags or {})
-    else
-      config = {}
+    local ok, custom_config = pcall(require, "plugins.lsp.lang." .. server)
+    local lsp_config = {
+      capabilities = capabilities,
+      on_attach = M.on_attach,
+      lsp_flags = add_flags,
+    }
+
+    if ok and type(custom_config) == "table" then
+      lsp_config = vim.tbl_deep_extend('force', lsp_config, custom_config or {})
     end
 
-    vim.lsp.config(server, config)
+    vim.lsp.config(server, lsp_config)
     vim.lsp.enable(server)
   end
 end
