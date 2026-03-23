@@ -21,4 +21,12 @@ return {
     ft = { "markdown" },
     build = function() vim.fn["mkdp#util#install"]() end,
   },
+  {
+    "Allaman/tf.nvim",
+    opts = {
+      filetypes = { "terraform", "tf" }
+    },
+    ft = "terraform"
+
+  }
 }
