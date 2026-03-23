@@ -53,11 +53,12 @@ For example, npm, cargo or even cmake.
 
 ## Some Additionall format support or certain functionality for some formats
 
-- [nvim-emmet](https://www.github.com/) Emmet snippets for html 
-- [vimtex](https://www.github.com/) To work on latex Documents
+- [nvim-emmet](https://www.github.com/olrtg/nvim-emmet) Emmet snippets for html
+- [vimtex](https://www.github.com/lervag/vimtex) To work on latex Documents
 - **Markdown:** 
     - [render-markdown](https://www.github.com/MeanderingProgrammer/render-markdown.nvim) renders markdown in normal mode
     - [markdown-preview](https://www.github.com/iamcco/markdown-preview.nvim)(Still some configuration issues)
+- [tf.nvim](https://www.github.com/iamcco/Allaman/tf.nvim)
 
 # Enhance/TestOut
 
