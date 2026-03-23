@@ -13,6 +13,7 @@ M.lang_serves = {
   "html",
   "vue_ls",
   "vtsls",
+  "yamlls",
   "gitlab_ci_ls",
 }
 

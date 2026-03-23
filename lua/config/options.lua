@@ -39,8 +39,8 @@ o.formatoptions = "cqj"
 o.shortmess:append "c"
 
 --- Folding Options
-o.foldmethod = "expr"                          -- to apply fold according to a expr defined in foldexpr
-o.foldexpr = "v:lua.vim.treesitter.foldexpr()" -- Allows to fold according to treesitter differenciating
+o.foldmethod = "indent"                          -- to apply fold according to a expr defined in foldexpr
+-- o.foldexpr = "v:lua.vim.treesitter.foldexpr()" -- Allows to fold according to treesitter differenciating
 o.foldcolumn = "0"                             -- disables folding column (horizontal)
 o.foldtext = ""                                -- Disables foldtext, and diplays the line normally with highlighting and no line wrapping
 o.foldlevel = 1                                -- Adjust number of folds that are closed

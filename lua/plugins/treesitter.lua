@@ -13,6 +13,7 @@ local parsers = {
   "typescript",
   "vue",
   "latex",
+  "yaml",
 }
 
 return {
