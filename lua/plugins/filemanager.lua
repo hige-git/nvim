@@ -50,8 +50,7 @@ return {
       }
     },
     keys = {
-      { "-",         "<cmd>Oil<CR>", desc = "Open current dir in Oil" },
-      { "<leader>o", "<cmd>Oil<CR>", desc = "Open Oil" },
+      { "-", "<cmd>Oil<CR>", desc = "Open current dir in Oil" },
     },
   }
 }

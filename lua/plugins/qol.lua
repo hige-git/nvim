@@ -93,4 +93,12 @@ return {
       },
     },
   },
+  {
+    "davmacario/nvim-quicknotes",
+    opts = {},
+    keys = {
+      { "<leader>o",  mode = { "n" }, function() require("nvim-quicknotes").open_quicknotes() end,  desc = "Open Quicknotes" },
+      { "<leader>bc", mode = { "n" }, function() require("nvim-quicknotes").clear_quicknotes() end, desc = "Clear Quicknotes from current buffer" },
+    },
+  },
 }

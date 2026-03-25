@@ -50,6 +50,7 @@ For example, npm, cargo or even cmake.
 - [mini.pairs](https://www.github.com/nvim-mini/mini.pairs) Automatically create closing or opening pairs for some standard characters
 - [tabout](https://www.github.com/abecodes/tabout.nvim) Allows tabbing out of some section which can be seen in the config
 - [mini.surround](https://www.github.com/nvim-mini/mini.surround) Super helpfull workflow booster, enables automatic adding and removing of surrounding characters
+- [nvim-quickontes](https://www.github.com/nvim-mini/mini.surround) Allows to quickly store notes on a project
 
 ## Some Additionall format support or certain functionality for some formats
 
