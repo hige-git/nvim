@@ -27,7 +27,7 @@ o.cursorline = true                               -- to highlight the current li
 o.number = true                                   -- always show line numers
 o.relativenumber = true                           -- set relatives numbered lines
 o.numberwidth = 2                                 -- makes width of displayed numbers smaller
-o.signcolumn = "yes"                              -- always shows the sign column, otherwise it would shift text on sign for other lines
+o.signcolumn = "yes"                              -- Enables the column on the side along the line numbers for signs like warnings
 o.wrap = false                                    -- to not cut lines, and allow longer lines
 o.scrolloff = 8                                   -- so that on scrolling down the cursor stays at 8 lines from top, meaning it can be under
 o.sidescrolloff = 8                               -- same for the side
@@ -35,14 +35,18 @@ o.guifont = "JetBrains Mono:h14"                  -- Font to use in neovim
 o.undofile = true                                 -- to use undo even after closing file
 o.autoread = true                                 -- reload if file has been changed
 o.confirm = true                                  -- Confirm before exiting a window without saving
-o.formatoptions = "cqj"
-o.shortmess:append "c"
+o.formatoptions = "cqj"                           -- Formatoptions specially regarding comments
+o.shortmess:append "c"                            -- Disables unnescecarry messages regarding completions
+o.colorcolumn = "120"                             -- Highlights a column at the given position
+o.textwidth = 120                                 -- Textwidth before line auto breaks when
+o.fileformats = "unix"                            -- Format file only in unix format no dos
+o.list = true                                     -- Displays empty lines at the end of a lines as a dash
 
 --- Folding Options
-o.foldmethod = "indent"                          -- to apply fold according to a expr defined in foldexpr
+o.foldmethod = "indent" -- to apply fold according to a expr defined in foldexpr
 -- o.foldexpr = "v:lua.vim.treesitter.foldexpr()" -- Allows to fold according to treesitter differenciating
-o.foldcolumn = "0"                             -- disables folding column (horizontal)
-o.foldtext = ""                                -- Disables foldtext, and diplays the line normally with highlighting and no line wrapping
-o.foldlevel = 1                                -- Adjust number of folds that are closed
-o.foldlevelstart = 99                          -- Starts with no folds (99 is to high for any code)
-o.foldnestmax = 4                              -- Limits the maximal folds possible
+o.foldcolumn = "0"      -- disables folding column (horizontal)
+o.foldtext = ""         -- The string displayed on a fold
+o.foldlevel = 1         -- Adjust number of folds that are closed
+o.foldlevelstart = 99   -- Starts with no folds (99 is to high for any code)
+o.foldnestmax = 4       -- Limits the maximal folds possible
