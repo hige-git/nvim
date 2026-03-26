@@ -34,6 +34,7 @@ For example, npm, cargo or even cmake.
 - **File Managers:** Main use is [oil](https://www.github.com/stevearc/oil.nvim), additionally [neo-tree](https://www.github.com/nvim-neo-tree/neo-tree.nvim)
 - **Fuzzy Finding:** [telescope.nvim](https://www.github.com/nvim-telescope/telescope.nvim)
 - **Terminal:** [toggleterm](https://www.github.com/akinsho/toggleterm.nvim) nice terminal toggler
+- **Undotree:** [Undotree](https://www.github.com/akinsho/mbbill/undotree) Shows changes to file in filetree style. (May need Additionall configuration)
 
 ## Kind of Decorative
 

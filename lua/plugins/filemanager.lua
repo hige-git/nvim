@@ -52,5 +52,12 @@ return {
     keys = {
       { "-", "<cmd>Oil<CR>", desc = "Open current dir in Oil" },
     },
+  },
+  {
+    "mbbill/undotree",
+    lazy = false,
+    keys = {
+      { "<leader>u", mode = "n", "<cmd>UndotreeToggle<CR>", desc = "Open Undotree" }
+    }
   }
 }
