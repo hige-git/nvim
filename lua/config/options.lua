@@ -41,6 +41,7 @@ o.colorcolumn = "120"                             -- Highlights a column at the 
 o.textwidth = 120                                 -- Textwidth before line auto breaks when
 o.fileformats = "unix"                            -- Format file only in unix format no dos
 o.list = true                                     -- Displays empty lines at the end of a lines as a dash
+o.listchars = "tab:. ,trail:-"
 
 --- Folding Options
 o.foldmethod = "indent" -- to apply fold according to a expr defined in foldexpr
