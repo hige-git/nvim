@@ -46,7 +46,7 @@ For example, npm, cargo or even cmake.
 
 - [which-key](https://www.github.com/folke/which-key.nvim) Shows all keymaps 
 - [vim-tmux-navigator](https://www.github.com/christoomey/vim-tmux-navigator) Together with some tmux configuration it allows flawless workflow in an tmux environment
-- [flash.nvim](https://www.github.com/folke/flash.nvim) Helpfull lookup tool
+- [flash.nvim](https://www.github.com/folke/flash.nvim) Navigate via search labels
 - [buffer-manager](https://www.github.com/j-morano/buffer_manager.nvim) Allows quick navigation of multiple buffers
 - [mini.pairs](https://www.github.com/nvim-mini/mini.pairs) Automatically create closing or opening pairs for some standard characters
 - [tabout](https://www.github.com/abecodes/tabout.nvim) Allows tabbing out of some section which can be seen in the config
