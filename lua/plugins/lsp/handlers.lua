@@ -62,11 +62,6 @@ M.setup = function()
 
   local capabilities = require("blink.cmp").get_lsp_capabilities()
 
-  local add_flags = {
-    allow_incremental_sync = true,
-    debounce_text_changes = 150,
-  }
-
   local _, install = pcall(require, "plugins.lsp.install")
 
   for _, server in ipairs(install.lang_serves) do
@@ -74,7 +69,6 @@ M.setup = function()
     local lsp_config = {
       capabilities = capabilities,
       on_attach = M.on_attach,
-      lsp_flags = add_flags,
     }
 
     if ok and type(custom_config) == "table" then
