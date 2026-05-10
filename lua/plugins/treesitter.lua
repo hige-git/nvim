@@ -3,6 +3,7 @@ local parsers = {
   "lua",
   "vim",
   "markdown",
+  "markdown_inline",
   "python",
   "go",
   "terraform",
@@ -20,14 +21,16 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     event = { "BufReadPre", "BufNewFile" },
+    branch = "main",
+    lazy = false,
     build = ":TSUpdate",
     dependencies = {
-      "nvim-treesitter/nvim-treesitter-textobjects",
-      "nvim-treesitter/nvim-treesitter-context",
+      "nvim-treesitter/nvim-treesitter-textobjects", "nvim-treesitter/nvim-treesitter-context",
     },
     opts = {
       ensure_installed = parsers,
       auto_install = true,
+      install_strategy = "git",
 
       highlight = {
         enable = true,

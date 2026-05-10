@@ -5,6 +5,8 @@ M.setup_ui = function()
     underline = true,
     update_in_insert = true,
     severity_sort = true,
+    virtual_lines = false,
+    virtual_text = true,
     signs = {
       text = {
         [vim.diagnostic.severity.ERROR] = "",
@@ -29,7 +31,7 @@ M.setup_ui = function()
       focusable = false,
       style = "minimal",
       border = "rounded",
-      source = "always",
+      source = "if_many",
       header = "",
       prefix = "",
     },
@@ -43,10 +45,10 @@ M.on_attach = function(_, bufnr)
   k("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
   k("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
   k("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
-  -- k("n", "gH", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts) -- needs remap
-  -- k("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)
+  k("n", "gH", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
+  k("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)
   k("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
-  -- k("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
+  k("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
   -- k("n", "<leader>f", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
   k("n", "[d", '<cmd>lua vim.diagnostic.goto_prev({ border = "rounded" })<CR>', opts)
   k("n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
@@ -58,8 +60,7 @@ end
 M.setup = function()
   M.setup_ui()
 
-  local status_ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
-  local capabilities = status_ok and cmp_nvim_lsp.default_capabilities() or {}
+  local capabilities = require("blink.cmp").get_lsp_capabilities()
 
   local add_flags = {
     allow_incremental_sync = true,

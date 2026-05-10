@@ -35,6 +35,7 @@ For example, npm, cargo or even cmake.
 - **Fuzzy Finding:** [telescope.nvim](https://www.github.com/nvim-telescope/telescope.nvim)
 - **Terminal:** [toggleterm](https://www.github.com/akinsho/toggleterm.nvim) nice terminal toggler
 - **Undotree:** [Undotree](https://www.github.com/akinsho/mbbill/undotree) Shows changes to file in filetree style. (May need Additionall configuration)
+- **orgmode:** [Orgmode](https://www.github.com/nvim-orgmode/orgmode) Enables Emacses Org mode for documenting and note taking in nvim
 
 ## Kind of Decorative
 
