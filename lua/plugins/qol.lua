@@ -84,21 +84,13 @@ return {
         add = '<leader>sa',        -- Add surrounding in Normal and Visual modes
         delete = '<leader>sd',     -- Delete surrounding
         find = '<leader>sf',       -- Find surrounding (to the right)
+        replace = 'cs',            -- Replace surrounding
         find_left = '<leader>sF',  -- Find surrounding (to the left)
         highlight = '<leader>sh',  -- Highlight surrounding
-        replace = '<leader>sr',    -- Replace surrounding
 
         suffix_last = '<leader>l', -- Suffix to search with "prev" method
         suffix_next = '<leader>n', -- Suffix to search with "next" method
       },
-    },
-  },
-  {
-    "davmacario/nvim-quicknotes",
-    opts = {},
-    keys = {
-      { "<leader>o",  mode = { "n" }, function() require("nvim-quicknotes").open_quicknotes() end,  desc = "Open Quicknotes" },
-      { "<leader>bc", mode = { "n" }, function() require("nvim-quicknotes").clear_quicknotes() end, desc = "Clear Quicknotes from current buffer" },
     },
   },
 }
