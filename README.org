@@ -44,7 +44,7 @@ nvim --version | head -n 1 | awk '{print $2}'
 - *Project:* [[https://github.com/ahmedkhalf/project.nvim][Project.nvim]]
 
 ** Decorative (Kind of)
-- *Colorscheme Selector:* [[https://www.github.com/LmanTW/themify.nvim][Themify]]
+- *Colorscheme Selector:* [[https://github.com/vague2k/huez.nvim][huez.nvim]]
 - *Lualine:* [[https://www.github.com/nvim-lualine/lualine.nvim][lualine.nvim]]
 
 ** Some nice QoL Plugins

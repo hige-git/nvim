@@ -1,18 +1,18 @@
 
 # Table of Contents
 
-1.  [SetUp](#orge0aa796)
-    1.  [Package and Tool Managers](#orgc938b00)
-    2.  [LSP, Fomatting and Linting](#orgd0633cf)
-        1.  [Installed LSPs, Formatters or Linters can be found here:](#org4fa2022)
-    3.  [Workflow related](#orga18148d)
-    4.  [Decorative (Kind of)](#org015d686)
-    5.  [Some nice QoL Plugins](#org3d1c245)
-    6.  [Some Additionall fomrat support or certain functionality for some formats](#org343ddc7)
-2.  [ToTest/ToDos](#org6c8cd26)
+1.  [SetUp](#orge05a54e)
+    1.  [Package and Tool Managers](#orgff72539)
+    2.  [LSP, Fomatting and Linting](#org79ef334)
+        1.  [Installed LSPs, Formatters or Linters can be found here:](#org693d6d5)
+    3.  [Workflow related](#org691d691)
+    4.  [Decorative (Kind of)](#orgafed57d)
+    5.  [Some nice QoL Plugins](#org08d4a95)
+    6.  [Some Additionall fomrat support or certain functionality for some formats](#org8dd6970)
+2.  [ToTest/ToDos](#orge866a56)
 
 
-<a id="orge0aa796"></a>
+<a id="orge05a54e"></a>
 
 # SetUp
 
@@ -25,7 +25,7 @@ At the time of writing im using neovim with the version `v0.12.2`
 If used it might be needed to install some dependencies to compile or build stuff. For example, npm, cargo or even cmake
 
 
-<a id="orgc938b00"></a>
+<a id="orgff72539"></a>
 
 ## Package and Tool Managers
 
@@ -36,7 +36,7 @@ If used it might be needed to install some dependencies to compile or build stuf
     -   [Mason-Lsp-Config ](https://www.github.com/mason-org/mason-lspconfig.nvim)(considering deprecation)
 
 
-<a id="orgd0633cf"></a>
+<a id="org79ef334"></a>
 
 ## LSP, Fomatting and Linting
 
@@ -45,7 +45,7 @@ If used it might be needed to install some dependencies to compile or build stuf
 -   **Treesitter:** [nvim-treesitter](https://www.github.com/nvim-treesitter/nvim-treesitter)
 
 
-<a id="org4fa2022"></a>
+<a id="org693d6d5"></a>
 
 ### Installed LSPs, Formatters or Linters can be found here:
 
@@ -54,7 +54,7 @@ If used it might be needed to install some dependencies to compile or build stuf
 -   [Treesitter Parsers](lua/plugins/treesitter.lua)
 
 
-<a id="orga18148d"></a>
+<a id="org691d691"></a>
 
 ## Workflow related
 
@@ -67,15 +67,15 @@ If used it might be needed to install some dependencies to compile or build stuf
 -   **Project:** [Project.nvim](https://github.com/ahmedkhalf/project.nvim)
 
 
-<a id="org015d686"></a>
+<a id="orgafed57d"></a>
 
 ## Decorative (Kind of)
 
--   **Colorscheme Selector:** [Themify](https://www.github.com/LmanTW/themify.nvim)
+-   **Colorscheme Selector:** [huez.nvim](https://github.com/vague2k/huez.nvim)
 -   **Lualine:** [lualine.nvim](https://www.github.com/nvim-lualine/lualine.nvim)
 
 
-<a id="org3d1c245"></a>
+<a id="org08d4a95"></a>
 
 ## Some nice QoL Plugins
 
@@ -87,7 +87,7 @@ If used it might be needed to install some dependencies to compile or build stuf
 -   [mini.surround](https://www.github.com/nvim-mini/mini.surround)
 
 
-<a id="org343ddc7"></a>
+<a id="org8dd6970"></a>
 
 ## Some Additionall fomrat support or certain functionality for some formats
 
@@ -99,7 +99,7 @@ If used it might be needed to install some dependencies to compile or build stuf
 -   [tf.nvim](https://www.github.com/iamcco/Allaman/tf.nvim)
 
 
-<a id="org6c8cd26"></a>
+<a id="orge866a56"></a>
 
 # ToTest/ToDos
 
