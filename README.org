@@ -1,0 +1,67 @@
+
+#+NAME: version
+#+BEGIN_SRC shell :exports none
+nvim --version | head -n 1 | awk '{print $2}'
+#+END_SRC
+
+
+* SetUp
+
+  At the time of writing im using neovim with the version call_version()
+  #+begin_quote
+  NOTE:
+    The links lead to the GitHub page of the tool.
+    Only the installed LSPs and tools lead to the local configuration.
+  #+end_quote
+
+  If used it might be needed to install some dependencies to compile or build stuff. For example, npm, cargo or even cmake
+
+** Package and Tool Managers
+
+- *Package Manager:* [[https://www.github.com/folke/lazy.nvim.git][Lazy]], core setup
+- *Tool Managers:*
+  - [[https://www.github.com/mason-org/mason.nvim][Mason]]
+  - [[https://www.github.com/WhoIsSethDaniel/mason-tool-installer.nvim][Mason-tool-installer]]
+  - [[https://www.github.com/mason-org/mason-lspconfig.nvim][Mason-Lsp-Config ]](considering deprecation)
+
+** LSP, Fomatting and Linting
+- *LSP-config & Completion:* [[https://www.github.com/neovim/nvim-lspconfig][nvim-lspconfig]],[[https://github.com/saghen/blink.cmp][blink.cmp]]
+- *Formatting:* [[https://github.com/stevearc/conform.nvim][conform]] with install of formathers via [[https://www.github.com/mason-org/mason.nvim][mason]]
+- *Treesitter:* [[https://www.github.com/nvim-treesitter/nvim-treesitter][nvim-treesitter]]
+
+*** Installed LSPs, Formatters or Linters can be found here:
+- [[file:lua/plugins/lsp/install.lua][LSPs]]
+- [[file:lua/plugins/lsp/install.lua][Formatters & Linters]]
+- [[file:lua/plugins/treesitter.lua][Treesitter Parsers]]
+
+** Workflow related
+- *Git management:* [[https://www.github.com/kdheepak/lazygit.nvim][LazyGit]], [[https://www.github.com/esmuellert/codediff.nvim][CodeDiff]]
+- *File Managers:* Main use is [[https://www.github.com/stevearc/oil.nvim][oil]], additionally [[https://www.github.com/nvim-neo-tree/neo-tree.nvim][neo-tree]]
+- *Fuzzy Finding:* [[https://www.github.com/nvim-telescope/telescope.nvim][telescope.nvim]]
+- *Terminal:* [[https://www.github.com/akinsho/toggleterm.nvim][toggleterm]]
+- *Undotree:* [[https://www.github.com/akinsho/mbbill/undotree][Undotree]]
+- *Orgmode:* [[https://www.github.com/nvim-orgmode/orgmode][Orgmode]]
+- *Project:* [[https://github.com/ahmedkhalf/project.nvim][Project.nvim]]
+
+** Decorative (Kind of)
+- *Colorscheme Selector:* [[https://www.github.com/LmanTW/themify.nvim][Themify]]
+- *Lualine:* [[https://www.github.com/nvim-lualine/lualine.nvim][lualine.nvim]]
+
+** Some nice QoL Plugins
+- [[https://www.github.com/folke/which-key.nvim][Which-key]]
+- [[https://www.github.com/christoomey/vim-tmux-navigator][vim-tmux-navigator]]
+- [[https://www.github.com/folke/flash.nvim][flash.nvim]]
+- [[https://www.github.com/nvim-mini/mini.pairs][mini.pairs]]
+- [[https://www.github.com/abecodes/tabout.nvim][tabout.nvim]]
+- [[https://www.github.com/nvim-mini/mini.surround][mini.surround]]
+
+** Some Additionall fomrat support or certain functionality for some formats
+- [[https://www.github.com/olrtg/nvim-emmet][nvim-emmet]]
+- [[https://www.github.com/lervag/vimtex][vimtex]]
+- *Markdown:*
+  - [[https://www.github.com/MeanderingProgrammer/render-markdown.nvim][render-markdown.nvim]]
+  - [[https://www.github.com/iamcco/markdown-preview.nvim][markown-preview]] (Still some configuration issues)
+- [[https://www.github.com/iamcco/Allaman/tf.nvim][tf.nvim]]
+
+* ToTest/ToDos
+- [[https://github.com/YousefHadder/markdown-plus.nvim][Markdown-plus.nvim]]

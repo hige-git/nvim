@@ -1,76 +1,107 @@
+
+# Table of Contents
+
+1.  [SetUp](#orge0aa796)
+    1.  [Package and Tool Managers](#orgc938b00)
+    2.  [LSP, Fomatting and Linting](#orgd0633cf)
+        1.  [Installed LSPs, Formatters or Linters can be found here:](#org4fa2022)
+    3.  [Workflow related](#orga18148d)
+    4.  [Decorative (Kind of)](#org015d686)
+    5.  [Some nice QoL Plugins](#org3d1c245)
+    6.  [Some Additionall fomrat support or certain functionality for some formats](#org343ddc7)
+2.  [ToTest/ToDos](#org6c8cd26)
+
+
+<a id="orge0aa796"></a>
+
 # SetUp
 
-At the time of writing im using neovim with the version '0.11.6'
+At the time of writing im using neovim with the version `v0.12.2`
 
-> [!NOTE] 
-> The Links lead to the github page of the tool, only the installed lsps and tools lead to the local configuration.
+> NOTE:
+> 	The links lead to the GitHub page of the tool.
+> 	Only the installed LSPs and tools lead to the local configuration.
 
-If used it might be needed to install some dependencies to compile or build stuff.
-For example, npm, cargo or even cmake.
+If used it might be needed to install some dependencies to compile or build stuff. For example, npm, cargo or even cmake
 
-## Package and Tool Mangers
 
-- **Package Manager:** [Lazy](https://www.github.com/folke/lazy.nvim.git), core setup
-- **Tools Manager:** 
-    - [Mason](https://www.github.com/mason-org/mason.nvim)
-    - [mason-tool-installer](https://www.github.com/WhoIsSethDaniel/mason-tool-installer.nvim) 
-    - [mason-lspconfig](https://www.github.com/mason-org/mason-lspconfig.nvim)(considering deprecation)
+<a id="orgc938b00"></a>
 
-## LSP, Formatting, and Linting
+## Package and Tool Managers
 
-- **LSP-config & Completion:** [nvim-lspconfig](https://www.github.com/neovim/nvim-lspconfig), [nvim-cmp](https://www.github.com/hrsh7th/nvim-cmp)
-- **Formating:** [conform] with install of formatters via [mason](https://www.github.com/stevearc/conform.nvim)
-- **Treesitter:** [nvim-treesitter](https://www.github.com/nvim-treesitter/nvim-treesitter)
+-   **Package Manager:** [Lazy](https://www.github.com/folke/lazy.nvim.git), core setup
+-   **Tool Managers:**
+    -   [Mason](https://www.github.com/mason-org/mason.nvim)
+    -   [Mason-tool-installer](https://www.github.com/WhoIsSethDaniel/mason-tool-installer.nvim)
+    -   [Mason-Lsp-Config ](https://www.github.com/mason-org/mason-lspconfig.nvim)(considering deprecation)
 
-### Installed LSPs, Formatters or Linters can be found here: 
 
-- [LSPs](./lua/plugins/lsp/install.lua)
-- [Formaters & Linters](./lua/plugins/lsp/install.lua)
-- [Treesitter Parsers](./lua/plugins/treesitter.lua)
+<a id="orgd0633cf"></a>
+
+## LSP, Fomatting and Linting
+
+-   **LSP-config & Completion:** [nvim-lspconfig](https://www.github.com/neovim/nvim-lspconfig),[blink.cmp](https://github.com/saghen/blink.cmp)
+-   **Formatting:** [conform](https://github.com/stevearc/conform.nvim) with install of formathers via [mason](https://www.github.com/mason-org/mason.nvim)
+-   **Treesitter:** [nvim-treesitter](https://www.github.com/nvim-treesitter/nvim-treesitter)
+
+
+<a id="org4fa2022"></a>
+
+### Installed LSPs, Formatters or Linters can be found here:
+
+-   [LSPs](lua/plugins/lsp/install.lua)
+-   [Formatters & Linters](lua/plugins/lsp/install.lua)
+-   [Treesitter Parsers](lua/plugins/treesitter.lua)
+
+
+<a id="orga18148d"></a>
 
 ## Workflow related
 
-- **Git management:** [LazyGit](https://www.github.com/kdheepak/lazygit.nvim), [codediff](https://www.github.com/esmuellert/codediff.nvim)
-- **File Managers:** Main use is [oil](https://www.github.com/stevearc/oil.nvim), additionally [neo-tree](https://www.github.com/nvim-neo-tree/neo-tree.nvim)
-- **Fuzzy Finding:** [telescope.nvim](https://www.github.com/nvim-telescope/telescope.nvim)
-- **Terminal:** [toggleterm](https://www.github.com/akinsho/toggleterm.nvim) nice terminal toggler
-- **Undotree:** [Undotree](https://www.github.com/akinsho/mbbill/undotree) Shows changes to file in filetree style. (May need Additionall configuration)
-- **orgmode:** [Orgmode](https://www.github.com/nvim-orgmode/orgmode) Enables Emacses Org mode for documenting and note taking in nvim
-
-## Kind of Decorative
-
-**Colorscheme:** [gruvbox_material](https://www.github.com/sainnhe/gruvbox-material), multiple select possible due to [themify](https://www.github.com/LmanTW/themify.nvim)
-**Statusline:** [lualine](https://www.github.com/nvim-lualine/lualine.nvim)
+-   **Git management:** [LazyGit](https://www.github.com/kdheepak/lazygit.nvim), [CodeDiff](https://www.github.com/esmuellert/codediff.nvim)
+-   **File Managers:** Main use is [oil](https://www.github.com/stevearc/oil.nvim), additionally [neo-tree](https://www.github.com/nvim-neo-tree/neo-tree.nvim)
+-   **Fuzzy Finding:** [telescope.nvim](https://www.github.com/nvim-telescope/telescope.nvim)
+-   **Terminal:** [toggleterm](https://www.github.com/akinsho/toggleterm.nvim)
+-   **Undotree:** [Undotree](https://www.github.com/akinsho/mbbill/undotree)
+-   **Orgmode:** [Orgmode](https://www.github.com/nvim-orgmode/orgmode)
+-   **Project:** [Project.nvim](https://github.com/ahmedkhalf/project.nvim)
 
 
-## Some Nice QoL Plugins
+<a id="org015d686"></a>
 
-- [which-key](https://www.github.com/folke/which-key.nvim) Shows all keymaps 
-- [vim-tmux-navigator](https://www.github.com/christoomey/vim-tmux-navigator) Together with some tmux configuration it allows flawless workflow in an tmux environment
-- [flash.nvim](https://www.github.com/folke/flash.nvim) Navigate via search labels
-- [buffer-manager](https://www.github.com/j-morano/buffer_manager.nvim) Allows quick navigation of multiple buffers
-- [mini.pairs](https://www.github.com/nvim-mini/mini.pairs) Automatically create closing or opening pairs for some standard characters
-- [tabout](https://www.github.com/abecodes/tabout.nvim) Allows tabbing out of some section which can be seen in the config
-- [mini.surround](https://www.github.com/nvim-mini/mini.surround) Super helpfull workflow booster, enables automatic adding and removing of surrounding characters
-- [nvim-quickontes](https://www.github.com/nvim-mini/mini.surround) Allows to quickly store notes on a project
+## Decorative (Kind of)
 
-## Some Additionall format support or certain functionality for some formats
-
-- [nvim-emmet](https://www.github.com/olrtg/nvim-emmet) Emmet snippets for html
-- [vimtex](https://www.github.com/lervag/vimtex) To work on latex Documents
-- **Markdown:** 
-    - [render-markdown](https://www.github.com/MeanderingProgrammer/render-markdown.nvim) renders markdown in normal mode
-    - [markdown-preview](https://www.github.com/iamcco/markdown-preview.nvim)(Still some configuration issues)
-- [tf.nvim](https://www.github.com/iamcco/Allaman/tf.nvim)
-
-# Enhance/TestOut
-
-- Check and Optimize lazy/events.
-
-## Checkout/Test
-- [Markdown-plus](https://github.com/YousefHadder/markdown-plus.nvim) 
+-   **Colorscheme Selector:** [Themify](https://www.github.com/LmanTW/themify.nvim)
+-   **Lualine:** [lualine.nvim](https://www.github.com/nvim-lualine/lualine.nvim)
 
 
-## ToDevelop/find
-- Better or easier clipboard/registry manager
+<a id="org3d1c245"></a>
+
+## Some nice QoL Plugins
+
+-   [Which-key](https://www.github.com/folke/which-key.nvim)
+-   [vim-tmux-navigator](https://www.github.com/christoomey/vim-tmux-navigator)
+-   [flash.nvim](https://www.github.com/folke/flash.nvim)
+-   [mini.pairs](https://www.github.com/nvim-mini/mini.pairs)
+-   [tabout.nvim](https://www.github.com/abecodes/tabout.nvim)
+-   [mini.surround](https://www.github.com/nvim-mini/mini.surround)
+
+
+<a id="org343ddc7"></a>
+
+## Some Additionall fomrat support or certain functionality for some formats
+
+-   [nvim-emmet](https://www.github.com/olrtg/nvim-emmet)
+-   [vimtex](https://www.github.com/lervag/vimtex)
+-   **Markdown:**
+    -   [render-markdown.nvim](https://www.github.com/MeanderingProgrammer/render-markdown.nvim)
+    -   [markown-preview](https://www.github.com/iamcco/markdown-preview.nvim) (Still some configuration issues)
+-   [tf.nvim](https://www.github.com/iamcco/Allaman/tf.nvim)
+
+
+<a id="org6c8cd26"></a>
+
+# ToTest/ToDos
+
+-   [Markdown-plus.nvim](https://github.com/YousefHadder/markdown-plus.nvim)
 
