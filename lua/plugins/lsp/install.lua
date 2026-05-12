@@ -20,7 +20,6 @@ M.lang_serves = {
 M.tools = {
   "prettier",
   "goimports",
-  "rustfmt",
   "luaformatter",
   "black",
   "tex-fmt",

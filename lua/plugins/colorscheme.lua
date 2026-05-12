@@ -1,16 +1,32 @@
-local gruvbox_material = require("plugins.colorschemes.gruvbox_material")
-
-
 return {
-  "LmanTW/themify.nvim",
-  lazy = false,
-  priority = 1000,
-  opts = {
-    "loctvl842/monokai-pro.nvim",
-    "folke/tokyonight.nvim",
-    gruvbox_material,
+  {
+    "vague2k/huez.nvim",
+    dependencies = {
+      "nvim-telescope/telescope.nvim",
+    },
+    branch = "stable",
+    event = "UIEnter",
+    config = function()
+      require("huez").setup({})
+    end,
+    keys = {
+      { "<leader>fc", mode = "n", "<cmd>Huez<CR>", desc = "Theme Picker" },
+    }
   },
-  keys = {
-    { "<leader>cs", mode = "n", "<cmd>Themify<CR>", desc = "Toggles theme selector" },
+  {
+    "mcchrish/zenbones.nvim",
+    dependencies = { "rktjmp/lush.nvim" },
+    lazy = false,
+    priority = 1000
+  },
+  {
+    "sainnhe/gruvbox-material",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "rebelot/kanagawa.nvim",
+    lazy = false,
+    priority = 1000,
   }
 }
