@@ -14,7 +14,7 @@ local function toggle_scratch()
     vim.bo[scratch_buf].buftype = "nofile"
     vim.bo[scratch_buf].bufhidden = "hide"
     vim.bo[scratch_buf].swapfile = false
-    vim.bo[scratch_buf].filetype = "markdown"
+    vim.bo[scratch_buf].filetype = "org"
 
     vim.api.nvim_buf_set_name(scratch_buf, "*scratch*")
   end

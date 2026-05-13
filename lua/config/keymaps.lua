@@ -26,7 +26,7 @@ vim.g.maplocalleader = " "
 k("n", "<Esc><Esc>", ":noh<CR>", opts('Disables Text highlighting if active'))
 k("n", "<leader>w", ":w<CR>", opts('writes to file'))
 k("n", "cd", ":cd %:p:h<CR>", opts('Changes directory of session to current buffer'))
-k("n", "<leader>m", ":tabnext<CR>", opts('Move to next Tab'))
+k("n", "<C-n>", ":tabnext<CR>", opts('Move to next Tab'))
 k("n", "<leader>bs", '<C-^>', { desc = "Jump to last buffer" })
 
 -- Indent Mode
@@ -42,7 +42,7 @@ k("n", "<C-Left>", ":vertical resize +2<CR>", opts('resize to right'))
 
 -- Create Windows
 k('n', '<leader>v', ':vsplit <CR>', opts('Creates vertical split pane'))
-k('n', '<leader>h', ':horizontal split <CR>', opts('Creates horizontal split pane'))
+k('n', '<C-x>', ':horizontal split <CR>', opts('Creates horizontal split pane'))
 k('n', '<leader>n', ':tabnew <CR>', opts('Creates new tab'))
 
 -- Close Windows
