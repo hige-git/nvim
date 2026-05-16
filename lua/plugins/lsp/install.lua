@@ -6,6 +6,7 @@ M.lang_serves = {
   "gopls",
   "marksman",
   "lua_ls",
+  "panache",
   "rust_analyzer",
   "bashls",
   "texlab",
