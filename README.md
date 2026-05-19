@@ -83,7 +83,6 @@ If used it might be needed to install some dependencies to compile or build stuf
 -   [vim-tmux-navigator](https://www.github.com/christoomey/vim-tmux-navigator)
 -   [flash.nvim](https://www.github.com/folke/flash.nvim)
 -   [mini.pairs](https://www.github.com/nvim-mini/mini.pairs)
--   [tabout.nvim](https://www.github.com/abecodes/tabout.nvim)
 -   [mini.surround](https://www.github.com/nvim-mini/mini.surround)
 
 
