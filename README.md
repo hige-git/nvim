@@ -46,6 +46,7 @@ If used it might be needed to install some dependencies to compile or build stuf
 
 
 <a id="org693d6d5"></a>
+- **Snippets:** [LuaSnip](https://www.github.com/L3MON4D3/LuaSnip)
 
 ### Installed LSPs, Formatters or Linters can be found here:
 
