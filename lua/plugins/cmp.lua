@@ -15,10 +15,11 @@ return {
       "rafamadriz/friendly-snippets",
       "Saghen/blink.lib",
     },
-    build = function()
-      require('blink.cmp').build():wait(60000)
-    end,
+    build = 'cargo build --release',
 
+    version = '1.*',
+    ---@module 'blink.cmp'
+    ---@type blink.cmp.Config
     opts = {
       keymap = {
         preset = "default",
