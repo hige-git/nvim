@@ -1,8 +1,7 @@
 return {
   {
     "vague2k/huez.nvim",
-    dependencies = {
-      "nvim-telescope/telescope.nvim",
+    dependencies = { "nvim-telescope/telescope.nvim",
     },
     branch = "stable",
     event = "UIEnter",
@@ -16,7 +15,10 @@ return {
   {
     "folke/tokyonight.nvim",
     lazy = false,
-    priority = 1000
+    priority = 1000,
+    opts = {
+      transparent = true,
+    },
   },
   {
     "mcchrish/zenbones.nvim",
@@ -32,7 +34,10 @@ return {
   {
     "rebelot/kanagawa.nvim",
     lazy = false,
-    priority = 1000
+    priority = 1000,
+    opts = {
+      transparent = true
+    }
   },
   {
     "catppuccin/nvim",
@@ -49,7 +54,10 @@ return {
     "rose-pine/neovim",
     name = "rose-pine",
     lazy = false,
-    priority = 1000
+    priority = 1000,
+    opts = {
+      transparent = true,
+    }
   },
   {
     "navarasu/onedark.nvim",
@@ -60,5 +68,13 @@ return {
     "nyoom-engineering/oxocarbon.nvim",
     lazy = false,
     priority = 1000
+  },
+  {
+    "miikanissi/modus-themes.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = true
+    }
   }
 }
