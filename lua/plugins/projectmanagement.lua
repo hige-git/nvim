@@ -41,7 +41,7 @@ return {
     end,
   },
   {
-    'ahmedkhalf/project.nvim',
+    'hige-git/project.nvim',
     config = function()
       require("project_nvim").setup({
         detection_methods = { "pattern", "lsp" },
