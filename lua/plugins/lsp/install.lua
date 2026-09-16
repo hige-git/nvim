@@ -24,6 +24,7 @@ M.tools = {
   "luaformatter",
   "black",
   "tex-fmt",
+  "sqlfmt",
 }
 
 return M

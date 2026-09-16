@@ -1,6 +1,7 @@
 return {
   "stevearc/conform.nvim",
   enabled = true,
+  ---@
   config = function()
     require("conform").setup({
       notify_on_error = false,
@@ -16,10 +17,10 @@ return {
         python = { "black" },
         html = { "prettier" },
         js = { "prettier" },
+        yaml = { "prettier" },
         php = { "prettier" },
         go = { "gofmt", "goimports" },
-        -- templ = { "templ" },
-        -- sql = { "sqlfmt" },
+        sql = { "sqlfmt" },
         json = { "prettier" },
         rust = { "rustfmt" },
         latex = { "tex-fmt" },
