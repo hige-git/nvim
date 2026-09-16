@@ -7,8 +7,8 @@ return {
     require('telescope').setup({
       pickers = {
         find_files = {
-          hidden = false,
-          no_ignore = false,
+          hidden = true,
+          no_ignore = true,
         }
       }
     })

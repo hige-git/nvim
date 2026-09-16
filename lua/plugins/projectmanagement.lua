@@ -46,7 +46,7 @@ return {
       require("project_nvim").setup({
         detection_methods = { "pattern", "lsp" },
         patterns = { ".git", ".projectile", "Makefile", "package.json", "go.mod", "pyproject.toml" },
-        show_hidden = false,
+        show_hidden = true,
         silent_chdir = true,
       })
       require("telescope").load_extension("projects")
