@@ -29,6 +29,8 @@ k("n", "cd", ":cd %:p:h<CR>", opts('Changes directory of session to current buff
 k("n", "<C-n>", ":tabnext<CR>", opts('Move to next Tab'))
 k("n", "<leader>bs", '<C-^>', { desc = "Jump to last buffer" })
 
+k("n", "<leader>W", function() vim.opt.wrap = not vim.opt.wrap:get() end, opts('Toggle if text wrap in session'))
+
 -- Indent Mode
 k('v', '<', '<gv', opts('Indent to the right in v mode'))
 k('v', '>', '>gv', opts('Indent to the left in v mode'))
