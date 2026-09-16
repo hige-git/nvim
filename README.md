@@ -60,7 +60,7 @@ If used it might be needed to install some dependencies to compile or build stuf
 ## Workflow related
 
 -   **Git management:** [LazyGit](https://www.github.com/kdheepak/lazygit.nvim), [CodeDiff](https://www.github.com/esmuellert/codediff.nvim)
--   **File Managers:** Main use is [oil](https://www.github.com/stevearc/oil.nvim), additionally [neo-tree](https://www.github.com/nvim-neo-tree/neo-tree.nvim)
+-   **File Managers:** Main use is [oil](https://www.github.com/stevearc/oil.nvim), additionally [mini.files](https://www.github.com/nvim-mini/mini.files)
 -   **Fuzzy Finding:** [telescope.nvim](https://www.github.com/nvim-telescope/telescope.nvim)
 -   **Terminal:** [toggleterm](https://www.github.com/akinsho/toggleterm.nvim)
 -   **Undotree:** [Undotree](https://www.github.com/akinsho/mbbill/undotree)
