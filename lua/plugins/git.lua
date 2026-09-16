@@ -19,7 +19,7 @@ return {
   },
   {
     "esmuellert/codediff.nvim",
-    dependencies = { "MunifTanjim/nui.nvim" },
+    cmd = "CodeDiff",
     keys = {
       { "<leader>cd", mode = "n", "<cmd>CodeDiff<CR>", desc = "Open Code Diff" }
     }
