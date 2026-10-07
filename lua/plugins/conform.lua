@@ -10,18 +10,22 @@ return {
         if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
           return
         end
-        return { timeout_ms = 2000, async = true, lsp_format = "fallback" }
+
+        local formatters = require("conform").list_formatters_for_buffer(bufnr)
+        if #formatters == 0 then
+            return
+        end
+        return { timeout_ms = 2000, lsp_format = "prefer" }
       end,
       formatters_by_ft = {
-        lua = { "mystylua" },
+        -- lua = { "mystylua" },
         python = { "black" },
         html = { "prettier" },
         js = { "prettier" },
-        yaml = { "prettier" },
         php = { "prettier" },
         go = { "gofmt", "goimports" },
         sql = { "sqlfmt" },
-        json = { "prettier" },
+        -- json = { "prettier" },
         rust = { "rustfmt" },
         latex = { "tex-fmt" },
       },
