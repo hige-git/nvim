@@ -76,5 +76,11 @@ return {
       "olimorris/onedarkpro.nvim",
       lazy = false,
       priority = 1000,
+      opts = {
+          options = {
+              transparency = true,
+              lualine_transparency = true,
+          },
+      }
   },
 }
