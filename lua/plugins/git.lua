@@ -20,6 +20,13 @@ return {
   {
     "esmuellert/codediff.nvim",
     cmd = "CodeDiff",
+	opts = {
+		explorer = {
+			line_stats = {
+				enabled = true,
+			},
+		}
+	},
     keys = {
       { "<leader>cd", mode = "n", "<cmd>CodeDiff<CR>", desc = "Open Code Diff" }
     }
