@@ -3,10 +3,13 @@ local M = {}
 M.setup_ui = function()
   vim.diagnostic.config({
     underline = true,
-    update_in_insert = true,
+    -- If true updates in insert mode else in normal mode
+    update_in_insert = false,
     severity_sort = true,
+    -- Creates a virtual line below with the error
     virtual_lines = false,
-    virtual_text = true,
+    -- Show Error message in line
+    virtual_text = false,
     signs = {
       text = {
         [vim.diagnostic.severity.ERROR] = "",
@@ -28,7 +31,7 @@ M.setup_ui = function()
       }
     },
     float = {
-      focusable = false,
+      focusable = true,
       style = "minimal",
       border = "rounded",
       source = "if_many",
