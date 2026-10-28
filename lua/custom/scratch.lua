@@ -29,4 +29,4 @@ local function toggle_scratch()
   vim.wo[scratch_win].linebreak = true
 end
 
-vim.keymap.set("n", "<leader>a", toggle_scratch, { desc = "Toggle Scratch pad" })
+vim.keymap.set("n", "<leader>A", toggle_scratch, { desc = "Toggle Scratch pad" })
