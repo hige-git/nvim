@@ -8,6 +8,11 @@ end
 local k = vim.keymap.set
 
 
+-- Currently only on nightly
+local clearMultiCursor = function ()
+    local mc_ns = vim.api.nvim_create_namespace("nvim.multicursor")
+    vim.api.nvim_buf_clear_namespace(0, mc_ns, 0, -1)
+end
 
 -- Remap Leader
 k("", "<space>", "<Nop>", opts('Set leader to space'))
@@ -28,6 +33,7 @@ k("n", "<leader>w", ":w<CR>", opts('writes to file'))
 k("n", "cd", ":cd %:p:h<CR>", opts('Changes directory of session to current buffer'))
 k("n", "<C-n>", ":tabnext<CR>", opts('Move to next Tab'))
 k("n", "<leader>bs", '<C-^>', { desc = "Jump to last buffer" })
+k("n", "<C-q>", clearMultiCursor, {desc = "clear multicursor buffer"})
 
 k("n", "<leader>W", function() vim.opt.wrap = not vim.opt.wrap:get() end, opts('Toggle if text wrap in session'))
 
