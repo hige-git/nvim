@@ -12,10 +12,10 @@ M.setup_ui = function()
     virtual_text = false,
     signs = {
       text = {
-        [vim.diagnostic.severity.ERROR] = "",
-        [vim.diagnostic.severity.WARN]  = "",
-        [vim.diagnostic.severity.HINT]  = "",
-        [vim.diagnostic.severity.INFO]  = "",
+        [vim.diagnostic.severity.ERROR] = "x", -- ""
+        [vim.diagnostic.severity.WARN]  = "!", -- ""
+        [vim.diagnostic.severity.HINT]  = "i", -- ""
+        [vim.diagnostic.severity.INFO]  = "?", -- ""
       },
       texthl = {
         [vim.diagnostic.severity.ERROR] = "Error",
@@ -48,7 +48,7 @@ M.on_attach = function(_, bufnr)
   k("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
   k("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
   k("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
-  k("n", "gH", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
+  k("i", "<C-k>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
   k("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)
   k("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
   k("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
